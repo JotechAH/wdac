@@ -1,7 +1,7 @@
 
 if SERVER then
 	print("//////////////////////////////////")
-    print("~= Project WatchDog "..WDAC.Version.." =~")
+   	print("~= Project WatchDog "..WDAC.Version.." =~")
 	print("//////////////////////////////////")
 
 	file.CreateDir( "wdac" )
@@ -33,9 +33,9 @@ if SERVER then
 	end
 	print("//////////////////////////////////")
 
-    AddCSLuaFile( "wdac/wdac.lua" )
-    AddCSLuaFile( "wdac/payload.lua" )
-    AddCSLuaFile( "wdac/client/0001_checks.lua" )
+   	AddCSLuaFile( "wdac/wdac.lua" )
+    	AddCSLuaFile( "wdac/payload.lua" )
+    	AddCSLuaFile( "wdac/client/0001_checks.lua" )
 	AddCSLuaFile( "wdac/client/0002_cmd.lua" )
 	AddCSLuaFile( "wdac/ui/ui.lua" )
 	AddCSLuaFile( "wdac/ui/font.lua" )
@@ -49,9 +49,9 @@ if CLIENT then
 	WDAC.TblDump = table.Copy(concommand.GetTable())
 	WDAC.HookDump = table.Copy(hook.GetTable())
 
-    include( "wdac/client/0001_checks.lua" )
+	include( "wdac/client/0001_checks.lua" )
 	include( "wdac/client/0002_cmd.lua" )
-    include( "wdac/payload.lua" )
+	include( "wdac/payload.lua" )
 	include( "wdac/ui/ui.lua" )
 	include( "wdac/ui/font.lua" )
 
