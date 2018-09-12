@@ -146,6 +146,7 @@ if SERVER then
     include( "wdac/server/convar_mismatch.lua" )
     include( "wdac/server/acceleration.lua" )
     include( "wdac/server/payloads.lua" )
+	include( "wdac/server/auto_setup.lua" )
 
     include( "wdac/network/networking.lua" )
 

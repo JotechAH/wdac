@@ -34,8 +34,8 @@ if SERVER then
 	print("//////////////////////////////////")
 
    	AddCSLuaFile( "wdac/wdac.lua" )
-    	AddCSLuaFile( "wdac/payload.lua" )
-    	AddCSLuaFile( "wdac/client/0001_checks.lua" )
+    AddCSLuaFile( "wdac/payload.lua" )
+    AddCSLuaFile( "wdac/client/0001_checks.lua" )
 	AddCSLuaFile( "wdac/client/0002_cmd.lua" )
 	AddCSLuaFile( "wdac/ui/ui.lua" )
 	AddCSLuaFile( "wdac/ui/font.lua" )
